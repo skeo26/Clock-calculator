@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Калькулятор и часы"</title>
+    <link rel="stylesheet" href="lr8.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>Калькулятор</h2>
+            <form id="calcForm">
+                <input type="text" id="op1" placeholder="Первый операнд" required><br>
+                <input type="text" id="op2" placeholder="Второй операнд" required><br>
+                <select id="operator">
+                    <option value="Сумма">Сумма</option>
+                    <option value="Разность">Разность</option>
+                    <option value="Умножение">Умножение</option>
+                    <option value="Деление">Деление</option>
+                    <option value="Конкатенация">Конкатенация</option>
+                </select><br>
+                <button type="button" onclick="calculating()">Вычислить</button>
+            </form>
+            <p id="result"></p>
+        </div>
+
+        <div class="clock">
+            <h2>Текущее время</h2>
+            <p id="time"></p>
+        </div>
+    </div>
+    <script src="lr8.js">
+    </script>
+</body>
+
+</html>
